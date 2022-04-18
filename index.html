@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cart.js"></script>
+</head>
+
+<body>
+    <div class="giohang">
+        <a onclick="showcart();"><img src="images/cart.png"><span id="countsp">0</span></a>
+    </div>
+    <div id="showcart">
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+            </tr>
+            <tbody id="mycart">
+
+            </tbody>
+
+        </table>
+    </div>
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1> THẾ GIỚI N I K E</h1>
+        </div>
+
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Giỏ hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="row">
+                <div class="banner mb">
+                    <img src="images/sale.jpg" alt="" width="100%" height="auto">
+                </div>
+            </div>
+            <article>
+            <div class="row">
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/hinh1.webp" alt=""></div>
+                    <p>$<span>3,239,000</span></p>
+                    <a href="#">Nike Air Force LX Next Nature</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/hinh2.webp" alt=""></div>
+                    <p>$<span>559,000</span></p>
+                    <a href="#">Nike Dri-FIT Tailwind Fast A.I.R.</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="images/hinh3.webp" alt=""></div>
+                    <p>$<span>1,759,000</span></p>
+                    <a href="#">Nike Revolution 6 Next Nature</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/hinh4.webp" alt=""></div>
+                    <p>$<span>919,000</span></p>
+                    <a href="#">Nike Dri-FIT Strike</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/hinh5.webp" alt=""></div>
+                    <p>$<span>2,929,000</span></p>
+                    <a href="#"> Nike SuperRep Go3 Flyknit</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="images/hinh6.webp" alt=""></div>
+                    <p>$<span>2,929,000</span></p>
+                    <a href="#">Nike Air Force 1 '07 Next Nature</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/hinh7.webp" alt=""></div>
+                    <p>$<span>2,419,000</span></p>
+                    <a href="#">Nike AFS1 Crater Next Nature</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/hinh8.webp" alt=""></div>
+                    <p>$<span>1,429,000</span></p>
+                    <a href="#">Nike Dri-FIT Icon Clash</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="images/hinh9.webp" alt=""></div>
+                    <p>$<span>919,000</span></p>
+                    <a href="#">Nike Dri-FIT Strike</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+            </div>
+        </article>
+            <aside>
+                <form class="form">
+                    <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+                    <div>
+                        <label>Mã sinh viên</label><br>
+                        <input type="text" class="tt">
+                    </div>
+                    <div>
+                        <label>Họ và tên</label><br>
+                        <input type="text" class="tt">
+                    </div>
+                    <div>
+                        <label> Email</label>
+                        <input type="email" class="tt">
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Giới tính</legend>
+                            <input type="radio" name="gender" value="nam" /> <label>Nam</label>
+                            <input type="radio" name="gender" value="NỮ" /> <label>Nữ</label> <br>
+
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Sở thích</legend>
+                            <input type="checkbox" name="st"><label>Đọc Sách</label>
+                            <input type="checkbox" name="st"><label>Du Lịch</label>
+                            <input type="checkbox" name="st"><label>Ẩm Thực</label>
+                            <input type="checkbox" name="st"><label>Âm Nhạc</label>
+                            <input type="checkbox" name="st"><label>Khác</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label>Quốc tịch</label><br>
+                        <select class="tt">
+                            <option value="1">Chọn quốc gia</option>
+                            <option value="2">Việt Nam</option>
+                            <option value="3">Campuchia</option>
+                            <option value="4">Lào</option>
+                            <option value="5 ">Thái Lan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Ghi chú</label>
+                        <br>
+                        <textarea class="tt" cols="25" rows="7"></textarea>
+                    </div>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </aside>
+        </div>
+    </div>
+
+</body>
+
+</html>
